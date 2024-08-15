@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tienda.controllers.AddProductController">
+   <children>
+      <!-- Nombre del producto -->
+      <Text layoutX="50.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre del producto:" />
+      <TextField fx:id="productNameField" layoutX="50.0" layoutY="80.0" prefWidth="400.0" promptText="Nombre del producto" />
+
+      <!-- Precio del producto -->
+      <Text layoutX="50.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Precio del producto:" />
+      <TextField fx:id="productPriceField" layoutX="50.0" layoutY="160.0" prefWidth="400.0" promptText="Precio del producto" />
+
+      <!-- Stock del producto -->
+      <Text layoutX="50.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stock del producto:" />
+      <TextField fx:id="productStockField" layoutX="50.0" layoutY="240.0" prefWidth="400.0" promptText="Stock del producto" />
+
+      <!-- URL de la imagen del producto -->
+      <Text layoutX="50.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="URL de la imagen del producto:" />
+      <TextField fx:id="productImageUrlField" layoutX="50.0" layoutY="320.0" prefWidth="400.0" promptText="URL de la imagen del producto" />
+      
+      <!-- Descripción del producto -->
+      <Text layoutX="50.0" layoutY="380.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Descripción del producto:" />
+      <TextField fx:id="productDescripcion" layoutX="50.0" layoutY="400.0" prefWidth="400.0" promptText="Descripción del producto" />
+
+      <!-- Botones -->
+      <Button fx:id="registerButton" layoutX="67.0" layoutY="460.0" onAction="#handleAddProduct" prefWidth="150.0" text="Agregar producto" />
+      <Button layoutX="291.0" layoutY="460.0" onAction="#handleBackToLogin" prefWidth="150.0" text="Cancelar" />
+   </children>
+</Pane>
+

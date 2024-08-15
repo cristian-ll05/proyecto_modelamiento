@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tienda.controllers.MAinController">
+    <top>
+        <ToolBar>
+            <Button text="Agregar Producto" onAction="#handleAddProduct"/>
+            <Button text="Eliminar Producto" onAction="#handleDeleteProduct"/>
+            <Button text="Añadir al carrito" onAction="#handleAddToCart"/>
+            <Button text="Ver carrito" onAction="#handleShowCart"/>
+        </ToolBar>
+    </top>
+    <center>
+        <TableView fx:id="productTable">
+            <columns>
+                <TableColumn fx:id="nameColumn" text="Nombre" />
+                <TableColumn fx:id="priceColumn" text="Precio" />
+                <TableColumn fx:id="stockColumn" text="Stock" />
+                <TableColumn fx:id="descripcionColumn" text="Descripcion"  prefWidth="300.0" />
+                <TableColumn fx:id="imageColumn" text="Imagen">
+                
+                    <!-- La configuración del cellFactory se hará en el controlador -->
+                </TableColumn>
+            </columns>
+        </TableView>
+    </center>
+</BorderPane>
+
+

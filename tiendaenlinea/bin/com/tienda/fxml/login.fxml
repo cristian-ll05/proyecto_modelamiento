@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="352.0" prefWidth="488.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tienda.controllers.LoginController">
+   <children>
+      <Button fx:id="btnSesion" layoutX="101.0" layoutY="256.0" mnemonicParsing="false" text="Iniciar Sesion" onAction="#handleLogin"/>
+      <Button fx:id="btnRegistrarse" layoutX="321.0" layoutY="256.0" mnemonicParsing="false" text="Registrarse" onAction="#handleRegister"/>
+      <Text layoutX="69.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuario :" />
+      <Text layoutX="49.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contraseña :" />
+      <Text fill="#770c0c" layoutX="141.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenidos a la tienda en linea" textAlignment="CENTER" wrappingWidth="205.9095458984375">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtUsuario" layoutX="144.0" layoutY="97.0" />
+      <PasswordField fx:id="txtContrasena" layoutX="144.0" layoutY="150.0" />
+   </children>
+</Pane>

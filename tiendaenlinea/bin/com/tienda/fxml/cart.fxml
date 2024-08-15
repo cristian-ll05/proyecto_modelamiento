@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tienda.controllers.CartController">
+    <TableView fx:id="cartTable">
+        <columns>
+            <TableColumn fx:id="nameColumn" text="Nombre" prefWidth="200">
+                <cellValueFactory>
+                    <PropertyValueFactory property="name"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="priceColumn" text="Precio" prefWidth="100">
+                <cellValueFactory>
+                    <PropertyValueFactory property="price"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="quantityColumn" text="Cantidad" prefWidth="100">
+                <cellValueFactory>
+                    <PropertyValueFactory property="quantity"/>
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="descriptionColumn" text="Descripción" prefWidth="300">
+                <cellValueFactory>
+                    <PropertyValueFactory property="detalle"/>
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+    </TableView>
+    <Button fx:id="purchaseButton" text="Comprar"/>
+</VBox>
